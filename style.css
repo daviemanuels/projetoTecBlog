@@ -26,6 +26,7 @@ body {
 #area-principal {
     width: 920px;
     margin: 0 auto;
+    padding: 10px;
 }
 
 #area-postagens {
@@ -38,10 +39,16 @@ body {
     float: right;
 }
 
-#postagens {
+.postagens {
     background-color: #FFF;
     margin-bottom: 20px;
     padding: 20px;
+}
+
+.conteudo-lateral {
+    background-color: white;
+    padding: 10px;
+    margin-bottom: 20px;
 }
 
 
@@ -55,7 +62,6 @@ body {
 
 
 #menu-lateral {
-    background-color: #FFF;
     width: 240px;
     float: right;
 }
@@ -77,14 +83,26 @@ a {
 }
 
 a:link, a:visited {
+    color: #f7b600;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+#principal-menu a:link, #principal-menu a:visited {
     color: #FFF;
     padding: 8px 12px;
 }
 
-a:hover {
+#principal-menu a:hover {
     color: #f7b600;
-    background-color: #FFF;
-    
+    background-color: #FFF; 
+    text-decoration: none;
+}
+
+.conteudo-lateral a {
+    display: block;
 }
 
 
@@ -102,6 +120,18 @@ h2 {
     color: #f7b600;
 }
 
+h3 {
+    color: #565656;
+    background-color: #CCC;
+    padding: 5px;
+}
+
 .branco {
     color: #FFF;
+}
+
+.texto-lateral {
+    font-size: 0.8em;
+    padding: 5px;
+    /*border-bottom: 1px solid #CCC;*/
 }
